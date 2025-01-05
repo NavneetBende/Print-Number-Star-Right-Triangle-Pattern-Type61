@@ -1,0 +1,33 @@
+[code language=”java”]
+import java.lang.*;
+import java.io.*;
+class Pattern
+{
+public static void main(String[] args)throws IOException
+{
+BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+int n,i,j,a=1,t=4,k=3;
+System.out.print("Enter N value:");
+n=Integer.parseInt(br.readLine());
+for(i=1;i&lt;=n;i++)
+{
+if(i%2!=0)
+{
+for(j=1;j&lt;(i-1);j++)
+{
+System.out.print((a++)+"*");
+}
+System.out.println(a++);
+}
+else
+{
+for(j=1;j&lt;k;j++)
+{
+System.out.print((t++)+"*");
+}
+System.out.println(t++);
+k++;
+}
+}
+}
+}
